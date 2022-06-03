@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Cats World</title>
+
+  <style>
+    .img {
+      width: 30%;
+    }
+
+  </style>
+
+</head>
+<body>
+     <!-------------- Navbar --------------->
+         <div class="container-fluid">
+
+  
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+      <a class="navbar-brand" href="#"><img src="assets/cat-logo.png" width="50" alt=""></a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cat_facts.html">Cat Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="geo_location.html">Geolocation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>    
+        </ul>
+      </div>
+
+  </nav>
+</div>
+<!-------------- Navbar End --------------->
+<div class="">
+  <div class="head text-center">
+    <h1 class="">Cat's Facts</h1>
+    <img class="img my-3" src="animal.png" alt=""><br>
+    <button data-toggle="modal" data-target="#model" class="btn btn-primary my-3 getbutton">Get Facts</button>
+  </div>
+
+
+  <div class="modal" id="model" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cats facts generator</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="animal_type">Animal Type</label>
+              <input type="text" class="form-control" value="cat" id="animal_type" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Options: Cat, Dog, Horse & Snail</small>
+            </div>
+            <div class="form-group">
+              <label for="num_facts">Number of Facts</label>
+              <input type="number" class="form-control" id="num_facts">
+              <small id="emailHelp" class="form-text text-muted">MAX: 500</small>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary generate_btn" data-dismiss="modal">Generate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-group mx-3 my-3 facts">
+    
+  </div>
+ <!--------------- Footer --------------->
+
+ <footer>
+  <div class="footer-content">
+
+      <img src="assets/cat-logo.png" width="100" alt="">
+      <p>RCats' World provides information on cat products, behavior, health, and other topics regarding cat’s. Whether you want to know how to choose the best food for your cat or why your cat wakes you up in the middle of the night, we're here to help.</p>
+      <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy; <a href="#">Cats World</a>  </p>
+              <div class="footer-menu">
+                <ul class="f-menu">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Cat Facts</a></li>
+                  <li><a href="">About</a></li>
+                  
+                </ul>
+              </div>
+  </div>
+
+</footer>
+<!--------------- Footer End --------------->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+</div>
+</body>
+</html>
